@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f6f7744c.chunk.css",
+    "main.js": "/static/js/main.e91b7abe.chunk.js",
+    "main.js.map": "/static/js/main.e91b7abe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.82a0587d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.82a0587d.js.map",
+    "static/css/2.2bbe33c5.chunk.css": "/static/css/2.2bbe33c5.chunk.css",
+    "static/js/2.c20508ce.chunk.js": "/static/js/2.c20508ce.chunk.js",
+    "static/js/2.c20508ce.chunk.js.map": "/static/js/2.c20508ce.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.2bbe33c5.chunk.css.map": "/static/css/2.2bbe33c5.chunk.css.map",
+    "static/css/main.f6f7744c.chunk.css.map": "/static/css/main.f6f7744c.chunk.css.map",
+    "static/js/2.c20508ce.chunk.js.LICENSE.txt": "/static/js/2.c20508ce.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/PF Din Text Universal Light.9ef97ce3.woff",
+    "static/media/bucket.f76fd82a.png": "/static/media/bucket.f76fd82a.png",
+    "static/media/logo.9f5ee042.png": "/static/media/logo.9f5ee042.png",
+    "static/media/payap1.23de6718.png": "/static/media/payap1.23de6718.png",
+    "static/media/stripe.e062c3d1.png": "/static/media/stripe.e062c3d1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82a0587d.js",
+    "static/css/2.2bbe33c5.chunk.css",
+    "static/js/2.c20508ce.chunk.js",
+    "static/css/main.f6f7744c.chunk.css",
+    "static/js/main.e91b7abe.chunk.js"
+  ]
+}

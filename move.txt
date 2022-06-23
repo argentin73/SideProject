@@ -1,0 +1,11 @@
+mkdir -p build/root
+for file in $(ls build | grep -E -v '^(index\.html|static|root)$'); do
+    mv "build/$file" build/root;
+done
+
+pg_dump -f pg_dump --no-owner --no-acl --encoding utf8 -U postgres SendingServiceDB
+
+heroku pg:psql --app sending-service < pg_dump
+
+heroku pg:reset -a sending-service
+
