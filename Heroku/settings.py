@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     '*',
 ]
 
-CORS_ORIGIN_WHITELIST = 'https://sending-service.herokuapp.com'
+# CORS_ORIGIN_WHITELIST = 'https://sending-service.herokuapp.com'
 CORS_ALLOW_CREDENTIALS = True
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
