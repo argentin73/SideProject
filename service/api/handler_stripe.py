@@ -50,11 +50,16 @@ def stripe_create_order(data, customer):
                 "quantity": 1,
             },
         ],
-        # payment={
-        #     'settings': {
-        #         'payment_method_types': ['card'],
-        #     },
-        # },
+        payment={
+            'settings': {
+                'payment_method_types': [
+                    'sofort',
+                    'giropay',
+                    'klarna',
+                    'card'
+                ],
+            },
+        },
         # Replace this with checkout form input from the request
         shipping_details={
             'name': name,

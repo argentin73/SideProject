@@ -27,6 +27,7 @@ def insert_order_data(data):
             explanation = form.errors.as_data()
             status_code = 400
     except Exception as e:
+        print(e)
         status_code = 400
         message = "Exception has occured"
         explanation = e
