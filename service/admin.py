@@ -90,8 +90,8 @@ class OrdersAdmin(admin.ModelAdmin, DynamicArrayMixin):
     def has_add_permission(self, request, obj=None):
         return False
 
-    # def has_delete_permission(self, request, obj=None):
-    #     return False
+    def has_delete_permission(self, request, obj=None):
+        return False
 
     def get_form(self, request, obj=None, **kwargs):
         form = super(OrdersAdmin, self).get_form(request, obj, **kwargs)
