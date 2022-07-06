@@ -1,3 +1,4 @@
+import imp
 from django.contrib import admin
 from django.contrib.auth.models import Group, User
 from django.contrib.admin.widgets import AdminURLFieldWidget
@@ -9,10 +10,12 @@ from django_better_admin_arrayfield.forms.widgets import DynamicArrayWidget
 from django_better_admin_arrayfield.models.fields import DynamicArrayField
 from service.api.constant import NOT_READONLY_FIELDS
 from django.utils.html import format_html
+from admin_interface.models import Theme
 
 # Unregister authentication models
 admin.site.unregister(Group)
 admin.site.unregister(User)
+admin.site.unregister(Theme)
 
 admin.site.site_header = "Mein-Nachsenderservice Administrationsbereich"
 admin.site.site_title = "Mein-Nachsenderservice Administrationsbereich"
@@ -87,8 +90,8 @@ class OrdersAdmin(admin.ModelAdmin, DynamicArrayMixin):
     def has_add_permission(self, request, obj=None):
         return False
 
-    def has_delete_permission(self, request, obj=None):
-        return False
+    # def has_delete_permission(self, request, obj=None):
+    #     return False
 
     def get_form(self, request, obj=None, **kwargs):
         form = super(OrdersAdmin, self).get_form(request, obj, **kwargs)

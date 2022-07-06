@@ -8,11 +8,11 @@ from service.api.constant import DELIVERY_CHOICES, CUSTOMER_CHOICES, ORDER_REASO
 
 # Create your models here.
 class Order(models.Model):
-    order_id = models.CharField('Order ID', max_length=60, default='ORders', blank=True)
-    customer_id = models.CharField('Customer ID', max_length=60, default='Customer', blank=True)
-    invoice_id = models.CharField('Invoice ID', max_length=60, default='INvoice', blank=True)
+    order_id = models.CharField('Bestellungsnummer', max_length=60, default='ORders', blank=True)
+    customer_id = models.CharField('Kundennummer', max_length=60, default='Customer', blank=True)
+    invoice_id = models.CharField('Rechnungsnummer', max_length=60, default='INvoice', blank=True)
     delivery_status = models.CharField(
-        'Delivery Status',
+        'Lieferstatus',
         max_length=20,
         choices=DELIVERY_CHOICES,
         default=DELIVERY_OPEN_LABEL,
@@ -29,7 +29,7 @@ class Order(models.Model):
         choices=ORDER_REASON_CHOICES,
         default=ORDER_REASON_MOVE_LABEL,
     )
-    order_time = models.CharField('Order Time', max_length=60, null=True, blank=True)
+    order_time = models.CharField('Bestellzeit', max_length=60, null=True, blank=True)
     later_start_time = models.DateField('Nachsende-Start', null=True, blank=True)
     deliver_again_date = models.DateField('Wieder zustellen ab', null=True, blank=True)
     # base_price = MoneyField('', max_digits=14, decimal_places=2, default_currency=DEFAULT_CURRENCY, null=True)
